@@ -1,6 +1,6 @@
 # Test Agent Download
 
-A shell script and optional variable file to test download a Contrast agent from TeamServer
+A couple of shell scripts and optional variable file to test download a Contrast agent from TeamServer
 
 ### Prerequisites
 
@@ -46,9 +46,3 @@ $ ./get-agent.sh
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
