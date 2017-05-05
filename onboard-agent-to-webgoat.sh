@@ -13,7 +13,7 @@ if [ -a WebGoat.jar ]
 then
     echo "Already downloaded WebGoat"
 else
-    ./get-agent.sh
+    ./get-webgoat.sh
 fi
 
 
