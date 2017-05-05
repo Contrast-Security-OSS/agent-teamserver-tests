@@ -28,7 +28,7 @@ then
     DOWNLOAD_NAME=contrast.jar
 fi
 
-if [ -z "$ORG_UUID"] || [ -z "$CONTRAST_API_KEY" ] || [ -z "$CONTRAST_SERVICE_KEY" ] || [ -z "$CONTRAST_EMAIL" ]
+if [ -z "$ORG_UUID" ] || [ -z "$CONTRAST_API_KEY" ] || [ -z "$CONTRAST_SERVICE_KEY" ] || [ -z "$CONTRAST_EMAIL" ]
 then
     echo "Required variables not set.  Exiting"
     exit;
