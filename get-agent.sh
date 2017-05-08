@@ -17,7 +17,7 @@ fi
 
 if [ -z "$TEAMSERVER_URL" ]
 then
-    echo "Using default TeamServer URL"
+    echo "Using saas TeamServer URL"
     TEAMSERVER_URL=https://app.contrastsecurity.com
 fi
 

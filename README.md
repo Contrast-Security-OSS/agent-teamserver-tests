@@ -1,10 +1,14 @@
 # Test Agent Download
 
-A couple of shell scripts and optional variable file to test download a Contrast agent from TeamServer
+A couple of shell scripts and optional variable file to test download a Contrast agent from TeamServer.
+
+* `get-agent.sh` -- downloads the Contrast TeamServer agent
+* `get-webgoat.sh` -- download a couple of different versions of WebGoat for agent onboarding test
+* `onboard-agent-to-webgoat.sh` -- downloads the agent and starts WebGoat with agent in path.
 
 ### Prerequisites
 
-Create a file `contrast-credentials.txt` in this folder with these variables.
+Create a file `contrast-credentials.txt` in this folder with these variables.  You can find a sample file `contrast-credentials.txt.sample`
 
 ```
 ORG_UUID=12345-abcd-defg-7809-424234123412
@@ -26,16 +30,26 @@ The API and Service Key for your user can be by:
 
 Optionally include values for:
 ```
-TEAMSERVER_URL=
-AGENT_TYPE=
-DOWNLOAD_NAME=
+TEAMSERVER_URL=https://teamserver.awesomeemployer.net
+AGENT_TYPE=java?jvm=1_5
+DOWNLOAD_NAME=contrast.jar
 ```
 
 ### Usage
 
-
+Download an Agent from TeamServer
 ```
 $ ./get-agent.sh
+```
+
+Download WebGoat 6 or 7
+```
+$ ./get-webgoat.sh
+```
+
+Download an agent, webgoat, and start webgoat with agent onboarded
+```
+$ ./onboard-agent-to-webgoat.sh
 ```
 
 
